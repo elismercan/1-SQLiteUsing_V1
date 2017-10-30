@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.java_oglen.a1_sqliteusing.MainActivity">
+
+    <TextView
+        android:text="Kullanıcı Kayıtları"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editAdi"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adı"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp" />
+    <EditText
+        android:id="@+id/editSoyadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Soyadı"
+        android:layout_below="@+id/editAdi"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/editMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mail"
+        android:layout_below="@+id/editSoyadi"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/editTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefon"
+        android:layout_below="@+id/editMail"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/btnKayit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="bntKayitYap"
+        android:text="KAYIT YAP"
+        android:layout_below="@+id/editMail"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="56dp" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnKayit" />
+
+</RelativeLayout>
